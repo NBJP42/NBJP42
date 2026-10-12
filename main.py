@@ -95,7 +95,7 @@ class SkillIconButton(QPushButton):
         self.setText(f"{self.skill.name}\n\nур. {self.skill.level}")
 
 def create_initial_skills():
-    """Создание коллекции из 10+ объектов пользовательского класса."""
+    """Создание коллекции из 10 объектов пользовательского класса."""
     names = [
         "Фаербол", "Ледяной шип", "Щит", "Молния", 
         "Хил", "Тень", "Яд", "Берсерк", "Волна", "Метеор"
@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
         hero_layout = QHBoxLayout()
 
         # «Человечек» (иконка/аватар персонажа)
-        self.hero_avatar = QLabel("🕵")
+        self.hero_avatar = QLabel("=_=")
         self.hero_avatar.setStyleSheet("font-size: 40px; background-color: #bdc3c7; border-radius: 25px; padding: 5px;")
         self.hero_avatar.setAlignment(Qt.AlignCenter)
         self.hero_avatar.setFixedSize(60, 60)
